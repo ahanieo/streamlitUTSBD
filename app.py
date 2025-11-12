@@ -82,13 +82,13 @@ else:
     st.warning("📁 Silakan unggah gambar terlebih dahulu untuk memulai.")
 
 # ==========================
-# FOOTER
-# ==========================
-st.markdown(
-    """
-    <hr>
-    <p style='text-align: center; font-size: 14px; color: gray;'>
-    Dibuat dengan ❤️ menggunakan Streamlit, YOLOv8, dan TensorFlow.
-    </p>
-    """, unsafe_allow_html=True
-)
+st.markdown("""
+<style>
+.stButton button {
+    background-color: #3E64FF;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+</style>
+""", unsafe_allow_html=True)
