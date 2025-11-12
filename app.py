@@ -131,7 +131,18 @@ if uploaded_file is not None:
                 confidence = np.max(prediction) * 100
 
                 # Contoh label kelas
-                class_labels = ["PCB", "Microwave", "Keyboard", "battery", "Mobile", "Lainnya"]
+                class_labels = [
+    "Battery",
+    "Keyboard",
+    "Microwave",
+    "Mobile",
+    "Mouse",
+    "PCB",
+    "Player",
+    "Printer",
+    "Television",
+    "Washing Machine"
+]
                 predicted_label = class_labels[class_index] if class_index < len(class_labels) else f"Class {class_index}"
 
                 st.markdown(f"### 🔤 Jenis E-Waste: **{predicted_label}**")
