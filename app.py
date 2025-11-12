@@ -1,4 +1,4 @@
-iimport streamlit as st
+import streamlit as st
 from ultralytics import YOLO
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
@@ -48,3 +48,4 @@ if uploaded_file is not None:
         class_index = np.argmax(prediction)
         st.write("### Hasil Prediksi:", class_index)
         st.write("Probabilitas:", np.max(prediction))
+
